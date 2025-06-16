@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Basic Login Test]" guice-stage="DEVELOPMENT">
+  <parameter name="os" value="windows"/>
+  <parameter name="browser" value="edge"/>
+  <listeners>
+    <listener class-name="utilities.AllureReportListener"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="5" name="Login Test(failed)">
+    <parameter name="excelFile" value="loginData.xlsx"/>
+    <parameter name="sheetName" value="Sheet1"/>
+    <classes>
+      <class name="testCases.LoginDDT">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launch"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- testCases.LoginDDT -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [Basic Login Test] -->

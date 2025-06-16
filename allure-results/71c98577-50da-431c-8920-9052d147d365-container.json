@@ -1,0 +1,1 @@
+{"uuid":"71c98577-50da-431c-8920-9052d147d365","name":"SmokeSuite","children":["5f63fb2f-3b04-465b-9f13-6c60899b6a5a"],"befores":[{"name":"launch","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1750081093357,"stop":1750081101796}],"afters":[],"start":1750081093287,"stop":1750081954924}
