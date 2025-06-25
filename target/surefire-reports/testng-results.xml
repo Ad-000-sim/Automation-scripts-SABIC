@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-24T14:46:29 IST" name="Suite" finished-at="2025-06-24T15:00:17 IST" duration-ms="827850">
+  <suite started-at="2025-06-25T10:12:27 IST" name="Suite" finished-at="2025-06-25T10:15:51 IST" duration-ms="204106">
     <groups>
       <group name="Master">
-        <method signature="LoginTest.LoginTest()[pri:1, instance:testCases.LoginTest@14fc5f04]" name="LoginTest" class="testCases.LoginTest"/>
+        <method signature="LoginTest.LoginTest()[pri:1, instance:testCases.LoginTest@239a307b]" name="LoginTest" class="testCases.LoginTest"/>
       </group> <!-- Master -->
       <group name="smoke">
-        <method signature="MixedSearchWorkFlow.MixedSearchReportGeneration()[pri:0, instance:testCases.MixedSearchWorkFlow@23f5b5dc]" name="MixedSearchReportGeneration" class="testCases.MixedSearchWorkFlow"/>
-        <method signature="PerformancePredictionWorkFlow.PPWorkflow()[pri:0, instance:testCases.PerformancePredictionWorkFlow@6b09fb41]" name="PPWorkflow" class="testCases.PerformancePredictionWorkFlow"/>
-        <method signature="PerformanceSearchWorkFlow.psReport()[pri:0, instance:testCases.PerformanceSearchWorkFlow@782859e]" name="psReport" class="testCases.PerformanceSearchWorkFlow"/>
-        <method signature="RecipeSearchWorkFlow.RecipeSearchWorkFlowTest()[pri:0, instance:testCases.RecipeSearchWorkFlow@3932c79a]" name="RecipeSearchWorkFlowTest" class="testCases.RecipeSearchWorkFlow"/>
-        <method signature="RecipeSuggestionWorkFlow.RecipeSuggestionReportGeneration()[pri:0, instance:testCases.RecipeSuggestionWorkFlow@624ea235]" name="RecipeSuggestionReportGeneration" class="testCases.RecipeSuggestionWorkFlow"/>
-        <method signature="LoginTest.LoginTest()[pri:1, instance:testCases.LoginTest@14fc5f04]" name="LoginTest" class="testCases.LoginTest"/>
+        <method signature="PerformancePredictionWorkFlow.PPWorkflow()[pri:0, instance:testCases.PerformancePredictionWorkFlow@57bc27f5]" name="PPWorkflow" class="testCases.PerformancePredictionWorkFlow"/>
+        <method signature="LoginTest.LoginTest()[pri:1, instance:testCases.LoginTest@239a307b]" name="LoginTest" class="testCases.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-06-24T14:46:29 IST" name="Test" finished-at="2025-06-24T15:00:17 IST" duration-ms="827850">
-      <class name="testCases.MixedSearchWorkFlow">
-        <test-method signature="MixedSearchReportGeneration()[pri:0, instance:testCases.MixedSearchWorkFlow@23f5b5dc]" started-at="2025-06-24T14:57:29 IST" name="MixedSearchReportGeneration" finished-at="2025-06-24T15:00:17 IST" duration-ms="167595" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MixedSearchReportGeneration -->
-      </class> <!-- testCases.MixedSearchWorkFlow -->
+    <test started-at="2025-06-25T10:12:27 IST" name="Test" finished-at="2025-06-25T10:15:51 IST" duration-ms="204106">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="launch(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@14fc5f04]" started-at="2025-06-24T14:46:29 IST" name="launch" finished-at="2025-06-24T14:46:38 IST" duration-ms="9054" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@239a307b]" started-at="2025-06-25T10:12:27 IST" name="launch" finished-at="2025-06-25T10:12:33 IST" duration-ms="6711" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,35 +30,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="LoginTest()[pri:1, instance:testCases.LoginTest@14fc5f04]" started-at="2025-06-24T14:46:38 IST" name="LoginTest" finished-at="2025-06-24T14:46:50 IST" duration-ms="11327" status="PASS">
+        <test-method signature="LoginTest()[pri:1, instance:testCases.LoginTest@239a307b]" started-at="2025-06-25T10:12:34 IST" name="LoginTest" finished-at="2025-06-25T10:12:43 IST" duration-ms="9734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-      </class> <!-- testCases.LoginTest -->
-      <class name="testCases.RecipeSearchWorkFlow">
-        <test-method signature="RecipeSearchWorkFlowTest()[pri:0, instance:testCases.RecipeSearchWorkFlow@3932c79a]" started-at="2025-06-24T14:53:33 IST" name="RecipeSearchWorkFlowTest" finished-at="2025-06-24T14:56:09 IST" duration-ms="156177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@239a307b]" started-at="2025-06-25T10:15:49 IST" name="tearDown" finished-at="2025-06-25T10:15:51 IST" duration-ms="1569" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RecipeSearchWorkFlowTest -->
-      </class> <!-- testCases.RecipeSearchWorkFlow -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginTest -->
       <class name="testCases.PerformancePredictionWorkFlow">
-        <test-method signature="PPWorkflow()[pri:0, instance:testCases.PerformancePredictionWorkFlow@6b09fb41]" started-at="2025-06-24T14:46:50 IST" name="PPWorkflow" finished-at="2025-06-24T14:50:14 IST" duration-ms="203246" status="PASS">
+        <test-method signature="PPWorkflow()[pri:0, instance:testCases.PerformancePredictionWorkFlow@57bc27f5]" started-at="2025-06-25T10:12:43 IST" name="PPWorkflow" finished-at="2025-06-25T10:15:49 IST" duration-ms="185847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PPWorkflow -->
       </class> <!-- testCases.PerformancePredictionWorkFlow -->
-      <class name="testCases.PerformanceSearchWorkFlow">
-        <test-method signature="psReport()[pri:0, instance:testCases.PerformanceSearchWorkFlow@782859e]" started-at="2025-06-24T14:56:09 IST" name="psReport" finished-at="2025-06-24T14:57:29 IST" duration-ms="79826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- psReport -->
-      </class> <!-- testCases.PerformanceSearchWorkFlow -->
-      <class name="testCases.RecipeSuggestionWorkFlow">
-        <test-method signature="RecipeSuggestionReportGeneration()[pri:0, instance:testCases.RecipeSuggestionWorkFlow@624ea235]" started-at="2025-06-24T14:50:14 IST" name="RecipeSuggestionReportGeneration" finished-at="2025-06-24T14:53:33 IST" duration-ms="199483" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RecipeSuggestionReportGeneration -->
-      </class> <!-- testCases.RecipeSuggestionWorkFlow -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

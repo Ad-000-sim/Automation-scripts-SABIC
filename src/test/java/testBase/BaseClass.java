@@ -50,7 +50,7 @@ public class BaseClass {
 
     }
 
-    @AfterTest
+    @AfterTest(alwaysRun = true)
     public void tearDown() {
             driver.quit();   
     }

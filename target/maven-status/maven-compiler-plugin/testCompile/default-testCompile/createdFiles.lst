@@ -12,6 +12,7 @@ testCases\PerformanceSearchWorkFlow.class
 testCases\LoginTest.class
 testCases\MixedSearchWorkFlow.class
 pageObjects\landingPage.class
+utilities\Logs.class
 testCases\RecipeSuggestionWorkFlow.class
 testCases\PerformancePredictionWorkFlow.class
 pageObjects\RecipeSearchWorkFlowPage.class
@@ -19,6 +20,7 @@ utilities\GenerateRandomStrings.class
 pageObjects\RecipeSuggestionWorkFlowPage.class
 utilities\AllureReportListener.class
 testCases\CreateUser.class
+testCases\PerformancePredictionWorkFlowRegressionTest.class
 utilities\ConfigReader.class
 pageObjects\PerfomanceSearchWorkFlowPage.class
 utilities\DataProviders.class
