@@ -1,80 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-23T18:23:40 IST" name="Suite" finished-at="2025-06-23T18:24:48 IST" duration-ms="68154">
+  <suite started-at="2025-07-04T10:27:41 IST" name="Suite" finished-at="2025-07-04T10:35:08 IST" duration-ms="446480">
     <groups>
       <group name="Master">
         <method signature="LoginTest.LoginTest()[pri:1, instance:testCases.LoginTest@62656be4]" name="LoginTest" class="testCases.LoginTest"/>
       </group> <!-- Master -->
       <group name="smoke">
-        <method signature="MixedSearchWorkFlow.MixedSearchReportGeneration()[pri:0, instance:testCases.MixedSearchWorkFlow@2ca26d77]" name="MixedSearchReportGeneration" class="testCases.MixedSearchWorkFlow"/>
+        <method signature="DataExploration.dataWorkflow()[pri:0, instance:testCases.DataExploration@747f281]" name="dataWorkflow" class="testCases.DataExploration"/>
         <method signature="PerformancePredictionWorkFlow.PPWorkflow()[pri:0, instance:testCases.PerformancePredictionWorkFlow@b86de0d]" name="PPWorkflow" class="testCases.PerformancePredictionWorkFlow"/>
-        <method signature="PerformanceSearchWorkFlow.psReport()[pri:0, instance:testCases.PerformanceSearchWorkFlow@1169afe1]" name="psReport" class="testCases.PerformanceSearchWorkFlow"/>
-        <method signature="RecipeSearchWorkFlow.RecipeSearchWorkFlowTest()[pri:0, instance:testCases.RecipeSearchWorkFlow@747f281]" name="RecipeSearchWorkFlowTest" class="testCases.RecipeSearchWorkFlow"/>
         <method signature="RecipeSuggestionWorkFlow.RecipeSuggestionReportGeneration()[pri:0, instance:testCases.RecipeSuggestionWorkFlow@81d9a72]" name="RecipeSuggestionReportGeneration" class="testCases.RecipeSuggestionWorkFlow"/>
         <method signature="LoginTest.LoginTest()[pri:1, instance:testCases.LoginTest@62656be4]" name="LoginTest" class="testCases.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-06-23T18:23:40 IST" name="Test" finished-at="2025-06-23T18:24:48 IST" duration-ms="68154">
-      <class name="testCases.MixedSearchWorkFlow">
-        <test-method signature="MixedSearchReportGeneration()[pri:0, instance:testCases.MixedSearchWorkFlow@2ca26d77]" started-at="2025-06-23T18:24:38 IST" name="MixedSearchReportGeneration" finished-at="2025-06-23T18:24:48 IST" duration-ms="10066" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Mixed Search WorkFlow Test Failed: Unable to locate element: //button[contains(@class,'mixed_search_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'mixed_search_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Mixed Search WorkFlow Test Failed: Unable to locate element: //button[contains(@class,'mixed_search_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'mixed_search_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f
-at testCases.MixedSearchWorkFlow.MixedSearchReportGeneration(MixedSearchWorkFlow.java:44)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MixedSearchReportGeneration -->
-      </class> <!-- testCases.MixedSearchWorkFlow -->
+    <test started-at="2025-07-04T10:27:41 IST" name="Test" finished-at="2025-07-04T10:35:08 IST" duration-ms="446480">
       <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="launch(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@62656be4]" started-at="2025-06-23T18:23:40 IST" name="launch" finished-at="2025-06-23T18:23:54 IST" duration-ms="13973" status="PASS">
+        <test-method is-config="true" signature="launch(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@62656be4]" started-at="2025-07-04T10:27:34 IST" name="launch" finished-at="2025-07-04T10:27:41 IST" duration-ms="6793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,260 +25,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="1">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="LoginTest()[pri:1, instance:testCases.LoginTest@62656be4]" started-at="2025-06-23T18:23:54 IST" name="LoginTest" finished-at="2025-06-23T18:24:01 IST" duration-ms="6590" status="PASS">
+        <test-method signature="LoginTest()[pri:1, instance:testCases.LoginTest@62656be4]" started-at="2025-07-04T10:27:41 IST" name="LoginTest" finished-at="2025-07-04T10:27:51 IST" duration-ms="10352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
       </class> <!-- testCases.LoginTest -->
-      <class name="testCases.RecipeSearchWorkFlow">
-        <test-method signature="RecipeSearchWorkFlowTest()[pri:0, instance:testCases.RecipeSearchWorkFlow@747f281]" started-at="2025-06-23T18:24:17 IST" name="RecipeSearchWorkFlowTest" finished-at="2025-06-23T18:24:27 IST" duration-ms="10102" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Recipe Search WorkFlow Test Failed: Unable to locate element: //button[contains(@class,'recipe_search_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'recipe_search_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Recipe Search WorkFlow Test Failed: Unable to locate element: //button[contains(@class,'recipe_search_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'recipe_search_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f
-at org.testng.Assert.fail(Assert.java:111)
-at testCases.RecipeSearchWorkFlow.RecipeSearchWorkFlowTest(RecipeSearchWorkFlow.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RecipeSearchWorkFlowTest -->
-      </class> <!-- testCases.RecipeSearchWorkFlow -->
       <class name="testCases.PerformancePredictionWorkFlow">
-        <test-method signature="PPWorkflow()[pri:0, instance:testCases.PerformancePredictionWorkFlow@b86de0d]" started-at="2025-06-23T18:24:01 IST" name="PPWorkflow" finished-at="2025-06-23T18:24:06 IST" duration-ms="5720" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test failed due to exception: Element <span class="link-title"> is not clickable at point (79,170) because another element <div class="loader-wrapper"> obscures it
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, clickElement {id=9f90e7a4-2a49-4e54-8a11-5a7156e70629}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (124e1330-c1e8-4c87-b101-3f811ba2be3f)] -> xpath: //span[.='Tenants']]
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test failed due to exception: Element <span class="link-title"> is not clickable at point (79,170) because another element <div class="loader-wrapper"> obscures it
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, clickElement {id=9f90e7a4-2a49-4e54-8a11-5a7156e70629}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (124e1330-c1e8-4c87-b101-3f811ba2be3f)] -> xpath: //span[.='Tenants']]
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f
-at org.testng.Assert.fail(Assert.java:111)
-at testCases.PerformancePredictionWorkFlow.PPWorkflow(PerformancePredictionWorkFlow.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="PPWorkflow()[pri:0, instance:testCases.PerformancePredictionWorkFlow@b86de0d]" started-at="2025-07-04T10:27:52 IST" name="PPWorkflow" finished-at="2025-07-04T10:32:21 IST" duration-ms="269422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PPWorkflow -->
       </class> <!-- testCases.PerformancePredictionWorkFlow -->
-      <class name="testCases.PerformanceSearchWorkFlow">
-        <test-method signature="psReport()[pri:0, instance:testCases.PerformanceSearchWorkFlow@1169afe1]" started-at="2025-06-23T18:24:27 IST" name="psReport" finished-at="2025-06-23T18:24:38 IST" duration-ms="10052" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test is failedUnable to locate element: //button[contains(@class,'performance_search_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'performance_search_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test is failedUnable to locate element: //button[contains(@class,'performance_search_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'performance_search_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f
-at org.testng.Assert.fail(Assert.java:111)
-at testCases.PerformanceSearchWorkFlow.psReport(PerformanceSearchWorkFlow.java:46)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- psReport -->
-      </class> <!-- testCases.PerformanceSearchWorkFlow -->
       <class name="testCases.RecipeSuggestionWorkFlow">
-        <test-method signature="RecipeSuggestionReportGeneration()[pri:0, instance:testCases.RecipeSuggestionWorkFlow@81d9a72]" started-at="2025-06-23T18:24:07 IST" name="RecipeSuggestionReportGeneration" finished-at="2025-06-23T18:24:17 IST" duration-ms="10107" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //button[contains(@class,'recipe_suggestion_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'recipe_suggestion_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[contains(@class,'recipe_suggestion_btn')]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [124e1330-c1e8-4c87-b101-3f811ba2be3f, findElement {value=//button[contains(@class,'recipe_suggestion_btn')], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8864, moz:profile: C:\Users\SIM-IN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 124e1330-c1e8-4c87-b101-3f811ba2be3f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at pageObjects.consoleLandingPage.clickonRecipeSuggestion(consoleLandingPage.java:52)
-at testCases.RecipeSuggestionWorkFlow.RecipeSuggestionReportGeneration(RecipeSuggestionWorkFlow.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="RecipeSuggestionReportGeneration()[pri:0, instance:testCases.RecipeSuggestionWorkFlow@81d9a72]" started-at="2025-07-04T10:32:21 IST" name="RecipeSuggestionReportGeneration" finished-at="2025-07-04T10:34:49 IST" duration-ms="147975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RecipeSuggestionReportGeneration -->
       </class> <!-- testCases.RecipeSuggestionWorkFlow -->
+      <class name="testCases.DataExploration">
+        <test-method signature="dataWorkflow()[pri:0, instance:testCases.DataExploration@747f281]" started-at="2025-07-04T10:34:49 IST" name="dataWorkflow" finished-at="2025-07-04T10:35:08 IST" duration-ms="18555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataWorkflow -->
+      </class> <!-- testCases.DataExploration -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

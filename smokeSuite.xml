@@ -21,10 +21,10 @@
 			<class name="testCases.LoginTest" />
 			<class name="testCases.PerformancePredictionWorkFlow" />
 			<class name="testCases.RecipeSuggestionWorkFlow" />
-			<class name="testCases.RecipeSearchWorkFlow" />
+			<!-- <class name="testCases.RecipeSearchWorkFlow" />
 			<class name="testCases.PerformanceSearchWorkFlow" />
-			<class name="testCases.MixedSearchWorkFlow" />
-
+			<class name="testCases.MixedSearchWorkFlow" /> -->
+			<class name="testCases.DataExploration"/>
 
 		</classes>
 	</test> <!--

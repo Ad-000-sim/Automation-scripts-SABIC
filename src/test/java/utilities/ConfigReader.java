@@ -32,7 +32,7 @@ public class ConfigReader {
         return prop.getProperty("password");
     }
     public String getrepoName1() {
-    	return prop.getProperty("ReportName1");
+    	return prop.getProperty("ReportName1");	
     }
     public String getrepoName2() {
     	return prop.getProperty("ReportName2");
@@ -45,5 +45,20 @@ public class ConfigReader {
     } 
     public String getrepoName5() {
     	return prop.getProperty("ReportName5");
+    }
+    public String getdatasetName() {
+    	return prop.getProperty("DatasetName");
+    }
+    public String getSaveColumnBasedFilterName1() {
+    	return prop.getProperty("SaveColumnBasedFilterName1");
+    }
+    public String getSelectFieldFirstColumnName() {
+    	return prop.getProperty("SelectFieldFirstColumnName");
+    }
+    public String getSelectFieldSecondColumnName() {
+    	return prop.getProperty("SelectFieldSecondColumnName");
+    }
+    public String getSaveValueBasedFilterName2() {
+    	return prop.getProperty("SaveValueBasedFilterName2");
     }
 }

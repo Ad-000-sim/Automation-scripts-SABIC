@@ -19,41 +19,21 @@ public class AllureReportListener implements ITestListener, IExecutionListener {
 
 	@Override
 	public void onExecutionFinish() {
-	    try {
-	        System.out.println("Generating Allure report...");
+		try {
+            System.out.println("Generating and launching Allure report...");
 
-	        // Always generate report
-	        ProcessBuilder generateReport = new ProcessBuilder(
-	            "C:\\allure-2.34.0\\bin\\allure.bat",
-	            "generate",
-	            "allure-results",
-	            "--clean",
-	            "-o",
-	            "target/allure-report"
-	        );
-	        generateReport.inheritIO();
-	        Process genProcess = generateReport.start();
-	        genProcess.waitFor();
-	        System.out.println("Allure report generated successfully.");
+            // On Windows, provide full path to allure.bat
+            ProcessBuilder pb = new ProcessBuilder("C:\\Users\\SIM-IND-0039\\Documents\\allure-2.34.0\\allure-2.34.0\\bin\\allure.bat", "serve", "allure-results");
+            pb.inheritIO();
+            Process process = pb.start();
+            process.waitFor();
 
-	        // Open report in browser only in local (Eclipse/Terminal), not in Jenkins
-	        if (System.getenv("JENKINS_HOME") == null && System.getenv("CI") == null) {
-	            System.out.println("Opening Allure report in browser...");
-	            ProcessBuilder openReport = new ProcessBuilder(
-	                "C:\\allure-2.34.0\\bin\\allure.bat",
-	                "open",
-	                "target/allure-report"
-	            );
-	            openReport.inheritIO();
-	            openReport.start(); 
-	        } else {
-	            System.out.println("Detected Jenkins environment — skipping browser launch.");
-	        }
+            System.out.println("Allure report generated and opened successfully.");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Failed to generate/open Allure report.");
+        }
 
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	        System.out.println("Failed to generate or open Allure report.");
-	    }
 	}
 
 
